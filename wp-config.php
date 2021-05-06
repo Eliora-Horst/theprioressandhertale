@@ -19,7 +19,7 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-if(strstr($_SERVER['SERVER_NAME'],'digital-humanities-capstone-project.local')){
+if(strstr($_SERVER['SERVER_NAME'],'theprioressandhertale.local')){
 	define( 'DB_NAME', 'local' );
 	define( 'DB_USER', 'root' );
 	define( 'DB_PASSWORD', 'root' );

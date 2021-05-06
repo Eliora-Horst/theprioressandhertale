@@ -3,13 +3,16 @@
 		wp_enqueue_style('main_font_choice','//fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700');
 		wp_enqueue_style('secondary_font_choice','//fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700');
 		wp_enqueue_style('font_awesome','//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-		if(strstr($_SERVER['SERVER_NAME'],'digital-humanities-capstone-project.local')){
+		if(strstr($_SERVER['SERVER_NAME'],'theprioressandhertale.local')){
 			wp_enqueue_script('main-JS', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
 		}
 		else{
 			wp_enqueue_script('vendors-JS', get_template_directory_uri('/bundled-assets/venders.js'), NULL, '1.0', true);
-			wp_enqueue_script('main-JS', get_template_directory_uri('/bundled-assets/scripts.22062e9889dfc1054d4d.js'), NULL, '1.0', true);
-			wp_enqueue_style('main-CSS', get_template_directory_uri('/bundled-assets/styles.22062e9889dfc1054d4d.css'));
+			wp_enqueue_script('main-JS', get_template_directory_uri('/bundled-assets/scripts.js'), NULL, '1.0', true);
+			wp_enqueue_style('main-CSS', get_template_directory_uri('/bundled-assets/styles.css'));
+			// wp_enqueue_script('vendors-JS', get_theme_file_uri('/bundled-assets/venders.js'), NULL, '1.0', true);
+			// wp_enqueue_script('main-JS', get_theme_file_uri('/bundled-assets/scripts.js'), NULL, '1.0', true);
+			// wp_enqueue_style('main-CSS', get_theme_file_uri('/bundled-assets/styles.css'));
 		}
 	}
 	add_action('wp_enqueue_scripts', 'DH_files');
