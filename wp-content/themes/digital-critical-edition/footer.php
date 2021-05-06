@@ -9,7 +9,7 @@
 
 	          <div class="footer-inner-cols">
 	            <div class="footer-col-inner">
-	              <h3 class="footer-headline">Explore</h3>
+	              <h3 class="footer-headline">Explore This</h3>
 	              <nav class="footer-nav">
 	                <?php wp_nav_menu(array('theme_location' => 'footer_menu_location1'));?>
 	              </nav>
