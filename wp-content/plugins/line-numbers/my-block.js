@@ -7,6 +7,7 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 		frequency: {type: 'number', default: 5},
 		fontSize: {type: 'number', default: 1.15},
 		stanzaBreaks: {type: 'text', default: ""}
+		startingLine: {type: 'number', default: 1}
 	},
 	edit: function(props){
 
@@ -21,6 +22,9 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 		}
 		function updateStanzaBreaks(event){
 			props.setAttributes({stanzaBreaks:event.target.value})
+		}
+		function updateStartingLine(event){
+			props.setAttributes({startingLine:event.target.value})
 		}
 		return wp.element.createElement(
 			"div",
@@ -78,14 +82,31 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 			wp.element.createElement(
 				"label",
 				null,
+				"Starting Line "
+			),
+			wp.element.createElement(
+				"input", {
+  					type: "number",
+  					value: props.attributes.startingLine,
+  					onChange: updateStartingLine,
+			}),
+			wp.element.createElement(
+				"br",
+				null,
+			),
+			wp.element.createElement(
+				"label",
+				null,
 				"Font Size (rem) "
 			),
 			wp.element.createElement(
 				"input", {
 				type: "number",
   				value: props.attributes.fontSize,
-  				onChange: updatefontSize,
-		}));
+  				onChange: updatefontSize,	
+  				}
+  			)
+		);
 
 	},
 	save: function(props){
@@ -94,7 +115,7 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 		var str = props.attributes.stanzaBreaks.replace(/\s/g, '');
 		var stanzaSplit = str.split(",");
 
-		for(var i=1;i<=props.attributes.numLines;i++){
+		for(var i=startingLine;i<=props.attributes.numLines;i++){
 			for(var j = 0; j<stanzaSplit.length; j++){
 				if((i-1)==stanzaSplit[j]){
 					output.push(wp.element.createElement(
