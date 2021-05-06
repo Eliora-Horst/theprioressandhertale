@@ -8,6 +8,7 @@
 	  	<div class="front-page-deco">
 		  	<div class="main-title">
 		  		<span><?php bloginfo('name'); ?></span>
+		  		<span>TESTING</span>
 		  	</div>
 		  	<div class="main-sub-title">
 		  		<span><?php echo get_bloginfo('description')?></span>
