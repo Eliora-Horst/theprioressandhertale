@@ -2,7 +2,7 @@
 
 	<div class="front-page">
 		<div class="front-page-image">
-  			<img src="<?php echo get_theme_file_uri('/images/library-image.jpg'); ?>">
+  			<img src="<?php echo get_theme_file_uri('/images/The Prioress.png'); ?>">
  		</div>
 	  <div class="front-page-title">
 	  	<div class="front-page-deco">
