@@ -6,7 +6,7 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 		numLines: {type: 'number'},
 		frequency: {type: 'number', default: 5},
 		fontSize: {type: 'number', default: 1.15},
-		stanzaBreaks: {type: 'text', default: ""}
+		stanzaBreaks: {type: 'text', default: ""},
 		startingLine: {type: 'number', default: 1}
 	},
 	edit: function(props){

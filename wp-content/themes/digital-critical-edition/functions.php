@@ -17,8 +17,6 @@
 	}
 	add_action('wp_enqueue_scripts', 'DH_files');
 
-	add_action('enqueue_block_assets', 'Line Number Generator');
-
 	function DH_features(){
 		add_theme_support('title-tag');
 		register_nav_menu('header_menu_location','Header Menu Location');
