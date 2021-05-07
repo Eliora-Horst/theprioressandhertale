@@ -52,7 +52,7 @@ div#ez-toc-container{
 
 /*HEADER*/
 .top-header{
-  background-color: #3C153B;
+  background-color: #1B1E26;
   position: absolute;
   top: 0;
   left: 0;
@@ -130,7 +130,7 @@ div#ez-toc-container{
 }
 .main-navigation .current-menu-item a,
 .main-navigation a:hover {
-  color: #F49237;
+  color: #7CC6FE;
 }
 .footer-nav ul {
   padding: 0;
@@ -1600,7 +1600,7 @@ margin: 20px 0;
     margin-bottom: 0;
   }
 .digital-edition-page > .wp-block-group{
-  background-color: #8b3057;
+  background-color: #6f3461;
   padding: 10px;
 }
 .digital-edition-page p{
@@ -1615,7 +1615,7 @@ margin: 20px 0;
 }
 .digital-edition-page h5{
   margin-bottom: 0;
-  background-color: #8b3057;
+  background-color: #6f3461;
   width: max-content;
   padding: 10px 25px;
   font-size: 1.3rem;
@@ -1636,19 +1636,19 @@ margin: 20px 0;
 }
 
 .tipGloss{
-  border-bottom: 1px solid $glossColor;
+  border-bottom: 1px solid #017ea4;
 }
 .tipGloss:hover{
-  border-bottom: 1px solid $glossTopColor;
+  border-bottom: 1px solid #006E90;
 }
 .tipNote{
-  color: $noteColor;
+  color:  #d5a7ca;
 }
 .tipNote:hover{
-  color: $noteTopColor;
+  color: #884278;
 }
 .tipFoot{
-  color: #b0635d;
+  color: #6f3461;
 }
 .tipFoot:hover{
   color: #79302a;
@@ -1673,8 +1673,8 @@ margin: 20px 0;
 
 .gloss{
   width: max-content;
-  border: 1px solid $glossColor;
-  border-top: 1px solid $glossTopColor;
+  border: 1px solid #017ea4;
+  border-top: 1px solid #006E90;
   box-shadow: 2px 2px 6px #cdcdcd;
   top: 100%;
   left: 0;
@@ -1689,8 +1689,8 @@ margin: 20px 0;
 .note{
   width: 200px;
   font-size: .75rem;
-  border: 1px solid $noteColor;
-  border-top: 1px solid $noteTopColor;
+  border: 1px solid  #d5a7ca;
+  border-top: 1px solid #C297B8;
   top: 50%;
   left: 50%;
 }
@@ -1698,8 +1698,8 @@ margin: 20px 0;
 .footNote{
   width: 20vw;
   font-size: 1rem;
-  border: 1px solid #b0635d;
-  border-top: 1px solid #79302a;
+  border: 1px solid #884278;
+  border-top: 1px solid #6f3461;
   top: 50%;
   left: 50%;
 }
@@ -1719,13 +1719,13 @@ margin: 20px 0;
   color: white;
   font-size: 1.3rem;
   font-weight: lighter;
-  background-color: $secondary;
+  background-color: #8b3057;
 }
 .uagb-tabs__panel .uagb-tab span{
   color: white;
 }
 .uagb-tab .uagb-tabs__active{
-  background-color: $secondary;
+  background-color: #8b3057;
 }
 
 .uagb-tabs__wrap.uagb-tabs__hstyle1-desktop .uagb-tab{
@@ -1737,10 +1737,10 @@ margin: 20px 0;
 .wp-block-image:not(.is-style-rounded) img{
   width: 100%;
   height: auto;
-  border: 1px solid $secondary;
+  border: 1px solid #8b3057;
 }
 .uagb-tabs__body-wrap{
-  background-color: $secondary;
+  background-color: #8b3057;
   padding: 10px;
 }
 .uagb-tabs__wrap.uagb-tabs__hstyle1-desktop .uagb-tabs__body-wrap{

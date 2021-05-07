@@ -119,8 +119,9 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 		var str = props.attributes.stanzaBreaks.replace(/\s/g, '');
 		var stanzaSplit = str.split(",");
 		
+		var length = parseInt(props.attributes.startingLine)+parseInt(props.attributes.numLines);
 
-		for(var i=props.attributes.startingLine;i<=props.attributes.numLines;i++){
+		for(var i=props.attributes.startingLine;i<=length;i++){
 			for(var j = 0; j<stanzaSplit.length; j++){
 				if((i-1)==stanzaSplit[j]){
 					output.push(wp.element.createElement(
