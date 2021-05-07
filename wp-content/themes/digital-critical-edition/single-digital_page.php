@@ -13,9 +13,9 @@
  	</div>
 
  	<div class="container page-section">
- 		<div class="metabox metabox--position-up metabox--with-home-link">
+ 		<!-- <div class="metabox metabox--position-up metabox--with-home-link">
       		<p><a class="metabox__blog-home-link" href="<?php echo site_url('/digital_pages');?>"><i class="fa fa-home" aria-hidden="true"></i> Digital Pages Home</a> <span class="metabox__main"><?php the_title() ?></span></p>
-   		</div>
+   		</div> -->
 
  		<div class='main-content'>
  			<?php the_content(); ?>
