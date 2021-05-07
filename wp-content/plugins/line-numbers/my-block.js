@@ -1,7 +1,7 @@
 wp.blocks.registerBlockType('ehorst/line-number-generator', {
 	title: 'Line Number Generator',
 	icon: 'editor-ol',
-	category: 'common',
+	category: 'text',
 	attributes: {
 		numLines: {type: 'number'},
 		frequency: {type: 'number', default: 5},
