@@ -18,6 +18,8 @@
  * @package WordPress
  */
 
+define( 'WP_DEBUG', false);
+
 // ** MySQL settings - You can get this info from your web host ** //
 if(strstr($_SERVER['SERVER_NAME'],'theprioressandhertale.local')){
 	define( 'DB_NAME', 'local' );

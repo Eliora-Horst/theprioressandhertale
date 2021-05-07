@@ -6,8 +6,9 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 		numLines: {type: 'number'},
 		frequency: {type: 'number', default: 5},
 		fontSize: {type: 'number', default: 1.15},
-		stanzaBreaks: {type: 'text', default: ""},
-		startingLine: {type: 'number', default: 1}
+		startingLine: {type: 'number', default: 1},
+		stanzaBreaks: {type: 'text', default: ""}
+		
 	},
 	edit: function(props){
 
@@ -20,12 +21,14 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 		function updatefontSize(event){
 			props.setAttributes({fontSize:event.target.value})
 		}
-		function updateStanzaBreaks(event){
-			props.setAttributes({stanzaBreaks:event.target.value})
-		}
 		function updateStartingLine(event){
 			props.setAttributes({startingLine:event.target.value})
 		}
+		function updateStanzaBreaks(event){
+			props.setAttributes({stanzaBreaks:event.target.value})
+		}
+		
+
 		return wp.element.createElement(
 			"div",
 			null,
@@ -75,6 +78,7 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
   					value: props.attributes.stanzaBreaks,
   					onChange: updateStanzaBreaks,
 			}),
+
 			wp.element.createElement(
 				"br",
 				null,
@@ -90,6 +94,7 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
   					value: props.attributes.startingLine,
   					onChange: updateStartingLine,
 			}),
+
 			wp.element.createElement(
 				"br",
 				null,
@@ -101,9 +106,9 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 			),
 			wp.element.createElement(
 				"input", {
-				type: "number",
-  				value: props.attributes.fontSize,
-  				onChange: updatefontSize,	
+					type: "number",
+	  				value: props.attributes.fontSize,
+	  				onChange: updatefontSize,	
   				}
   			)
 		);
@@ -111,11 +116,11 @@ wp.blocks.registerBlockType('ehorst/line-number-generator', {
 	},
 	save: function(props){
 		var output = [];
-
 		var str = props.attributes.stanzaBreaks.replace(/\s/g, '');
 		var stanzaSplit = str.split(",");
+		
 
-		for(var i=startingLine;i<=props.attributes.numLines;i++){
+		for(var i=props.attributes.startingLine;i<=props.attributes.numLines;i++){
 			for(var j = 0; j<stanzaSplit.length; j++){
 				if((i-1)==stanzaSplit[j]){
 					output.push(wp.element.createElement(
