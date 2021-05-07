@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Plugin Test
+ * Plugin Name: Line Number Generator
  * Author: E Horst 
- * Version: 1.0
+ * Version: 2.0
 **/
 
 function loadMyBlockFiles() {
